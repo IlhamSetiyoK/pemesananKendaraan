@@ -62,3 +62,28 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## User & Password Apps
+Admin
+- Username: admin@admin.com
+- Password: admin
+
+Verifikator
+- Username: verifikator@verifikator.com
+- Password: verifikator
+
+## App Version
+- Server Version:  10.4.28-MariaDB(PHPMyAdmin)
+- PHP Version: 8.1.17
+- Framework: Laravel 9.0
+
+## Apps Usage Guide
+1. Clone this repo
+2. Open the command prompt and run **composer install**
+3. Rename .env.example to .env
+4. Change the database setting on file .env
+5. Run the seeder for generating user account on the database
+6. use **php artisan serve** to run the project
+
+## About Apps
+This apps has two role user, Admin and Verificator. Admin can do any transaction for cars module, driver module and car rent transaction module. Verificator only make an approval before the car can be use after admin make the transaction. On the dashboard, there is a pie chart for visualizing how many transaction base on car category. The report can be downloaded from admin become excel file report.
