@@ -8,7 +8,7 @@ use App\Models\Car;
 use App\Models\Driver;
 use App\Models\User;
 use Maatwebsite\Excel\Facades\Excel;
-use App\Exports\TransactionExport;
+use App\Exports\TransactionsExport;
 
 class TransactionController extends Controller
 {
@@ -73,6 +73,6 @@ class TransactionController extends Controller
     }
 
     public function export() {
-        return Excel::download(new TransactionExport, 'transaction.xlsx');
+        return Excel::download(new TransactionsExport, 'transactions.xlsx');
     }
 }
